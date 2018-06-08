@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<title>FTO Hours to Days Converter</title>
+<link type="text/css"
+      rel="stylesheet"
+      href="../css/body.css">
+<body>
+
+<h2>FTO Converter</h2>
+<p>Type a number of hours FTO you have in the Hours field to convert the value to Days:</p>
+
+<p>
+  <label>Hours</label>
+  <input id="inputHours" type="number" placeholder="Hours" oninput="HoursConverter(this.value)" onchange="HoursConverter(this.value)">
+</p>
+<p>Days: <span id="outputHours"></span></p>
+
+<script>
+function HoursConverter(valNum) {
+  document.getElementById("outputHours").innerHTML=valNum/7.5;
+}
+</script>
+</body>
+</html>
